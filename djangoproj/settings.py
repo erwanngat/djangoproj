@@ -74,16 +74,17 @@ WSGI_APPLICATION = 'djangoproj.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': "django.db.backends.mysql",
-        'NAME': "djangoproj",
-        "USER": "laravel",
-        "PASSWORD": "",
-        "HOST": "127.0.0.1",
-        "PORT": "3306",
-    }
-}
+from .local_settings import *
+#DATABASES = {
+#    'default': {
+#        'ENGINE': "django.db.backends.mysql",
+#        'NAME': "",
+#        "USER": "",
+#        "PASSWORD": "",
+#        "HOST": "",
+#        "PORT": "",
+#    }
+#}
 
 
 # Password validation
